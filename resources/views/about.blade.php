@@ -70,10 +70,12 @@
 
 <body class="font-sans bg-gray-800">
     <!-- Navbar -->
-    <nav class="container flex flex-col items-center justify-between w-full px-4 py-3 mx-auto bg-gray-900 md:flex-row md:px-8">
+    <nav
+        class="container flex flex-col items-center justify-between w-full px-4 py-3 mx-auto bg-gray-900 md:flex-row md:px-8">
         <div class="flex items-center justify-between w-full md:w-auto">
             <a href="{{ url('/') }}" class="flex items-center p-1">
-                <img src="{{ asset('frontend/assets/images/store.png') }}" alt="Store Logo" class="w-12 h-12 md:w-16 md:h-16">
+                <img src="{{ asset('frontend/assets/images/store.png') }}" alt="Store Logo"
+                    class="w-12 h-12 md:w-16 md:h-16">
                 <span class="ml-2 text-lg font-bold text-white md:ml-4 md:text-xl">Manajemen Toko</span>
             </a>
             <button data-toggle="toggle-nav" data-target="#nav-items" class="text-white md:hidden">
@@ -81,18 +83,26 @@
             </button>
         </div>
         <div id="nav-items" class="flex-col items-center hidden mt-2 md:flex md:flex-row md:ml-auto md:mt-0">
-            <a href="{{ url('/') }}" class="px-3 py-1 text-sm text-white md:text-xs lg:text-sm md:px-4 md:py-2 hover:underline">Home</a>
-            <a href="{{ url('/') }}" class="px-3 py-1 text-sm text-white md:text-xs lg:text-sm md:px-4 md:py-2 hover:underline">Features</a>
-            <a href="{{ route('dashboard') }}" class="px-3 py-1 text-sm text-white md:text-xs lg:text-sm md:px-4 md:py-2 hover:underline">Dashboard</a>
-            <a href="{{ url('about') }}" class="px-3 py-1 text-sm text-white md:text-xs lg:text-sm md:px-4 md:py-2 hover:underline">About Us</a>
+            <a href="{{ url('/') }}"
+                class="px-3 py-1 text-sm text-white md:text-xs lg:text-sm md:px-4 md:py-2 hover:underline">Home</a>
+            <a href="{{ url('/') }}"
+                class="px-3 py-1 text-sm text-white md:text-xs lg:text-sm md:px-4 md:py-2 hover:underline">Features</a>
+            <a href="{{ route('dashboard') }}"
+                class="px-3 py-1 text-sm text-white md:text-xs lg:text-sm md:px-4 md:py-2 hover:underline">Dashboard</a>
+            <a href="{{ url('about') }}"
+                class="px-3 py-1 text-sm text-white md:text-xs lg:text-sm md:px-4 md:py-2 hover:underline">About Us</a>
             @if (Route::has('login'))
                 <div class="flex items-center mt-2 md:mt-0">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="px-3 py-1 mx-1 text-sm font-semibold text-gray-600 bg-white rounded md:text-xs lg:text-sm md:px-4 md:py-2 md:mx-2 hover:text-gray-900 focus:outline-none">Dashboard</a>
+                        <a href="{{ url('/dashboard') }}"
+                            class="px-3 py-1 mx-1 text-sm font-semibold text-gray-600 bg-white rounded md:text-xs lg:text-sm md:px-4 md:py-2 md:mx-2 hover:text-gray-900 focus:outline-none">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}" class="px-3 py-1 mx-1 text-sm font-semibold text-gray-600 bg-white rounded md:text-xs lg:text-sm md:px-4 md:py-2 md:mx-2 hover:text-gray-900 focus:outline-none">Log in</a>
+                        <a href="{{ route('login') }}"
+                            class="px-3 py-1 mx-1 text-sm font-semibold text-gray-600 bg-white rounded md:text-xs lg:text-sm md:px-4 md:py-2 md:mx-2 hover:text-gray-900 focus:outline-none">Log
+                            in</a>
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="px-3 py-1 mx-1 text-sm font-semibold text-gray-600 bg-white rounded md:text-xs lg:text-sm md:px-4 md:py-2 md:mx-2 hover:text-gray-900 focus:outline-none">Register</a>
+                            <a href="{{ route('register') }}"
+                                class="px-3 py-1 mx-1 text-sm font-semibold text-gray-600 bg-white rounded md:text-xs lg:text-sm md:px-4 md:py-2 md:mx-2 hover:text-gray-900 focus:outline-none">Register</a>
                         @endif
                     @endauth
                 </div>
@@ -107,10 +117,12 @@
                 <div class="col-md-6">
                     <h2>Welcome to Our Company</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae tortor vulputate
-                        fringilla. Curabitur auctor sapien a risus facilisis, at venenatis nisl facilisis. Proin sed
-                        magna ligula. Nam pharetra, augue vel sodales convallis, erat tortor dapibus purus, nec
-                        tincidunt elit lacus sed lorem. Nullam congue semper libero, sed tincidunt nulla dignissim id.
+                        Kelompok Yang terdiri dari 5 orang yaitu Alif nur rachman, Muhammad syafei, Wiranto Akbar
+                        Fadlillah, M. Yoga Prasetya Erlangga, Dhiya Ulhaq Khairunnisa. Kami adalah tim yang berdedikasi
+                        untuk memberikan solusi manajemen toko yang inovatif dan efisien. Dengan pengalaman dan keahlian
+                        kami dalam pengembangan perangkat lunak, kami berkomitmen untuk membantu bisnis Anda tumbuh dan
+                        berkembang dengan menyediakan alat yang mudah digunakan untuk mengelola inventaris, penjualan,
+                        dan pelanggan Anda.
                     </p>
                 </div>
             </div>
